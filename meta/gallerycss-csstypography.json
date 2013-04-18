@@ -1,0 +1,9 @@
+{
+    "gallerycss-csstypography": {
+        "requires": [
+            "typography-core.css",
+            "typography.css",
+            "typography-responsive.css"
+        ]
+    }
+}

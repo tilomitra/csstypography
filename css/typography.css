@@ -1,0 +1,130 @@
+/* 
+
+CSS Typography
+Simple CSS for Typography
+
+Part of YUI CSS
+Author: Tilo Mitra
+
+*/
+/* smaller margins on the smaller headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.75em 0 0;
+}
+p {
+  margin-top: 0.5em;
+}
+.splash {
+  padding: 3em 1.6em;
+}
+.splash-button {
+  font-size: 120%;
+}
+.splash-head {
+  font-size: 300%;
+  margin: 0.3em 0 0;
+  line-height: 1.2em;
+}
+.splash-subhead {
+  color: #999;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: 0.5em 0;
+}
+.splash-dark {
+  background: #222222;
+  color: #ffffff;
+}
+.splash-dark .splash-subhead {
+  color: #888888;
+}
+/* Prettify paragraphs. Can be applied to divs too */
+.content {
+  padding: 1.6em;
+  line-height: 1.4em;
+}
+.content-title {
+  margin-bottom: 0;
+}
+.content-subtitle {
+  margin-top: 0;
+  font-weight: normal;
+  color: #999;
+}
+/* Subheader Styling */
+.content-subhead {
+  color: #999;
+  text-transform: uppercase;
+  border-bottom: 2px solid #eee;
+  display: inline-block;
+}
+/* Blockquote Styling */
+.quote {
+  font-family: "Georgia", serif;
+  color: #666;
+  font-style: italic;
+  line-height: 1.8em;
+  border-left: 5px solid #ddd;
+  padding-left: 1.5em;
+}
+.quote cite {
+  font-size: 80%;
+  display: block;
+  font-family: sans-serif;
+  font-style: normal;
+}
+/* Adds the little dash before the cite */
+.quote cite:before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1px;
+  background: #ccc;
+  vertical-align: middle;
+  margin-right: 0.3em;
+}
+.code,
+.pre {
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  background: #f3f3f3;
+  font-size: 0.8em;
+  padding: 0.3em 0.5em;
+}
+.code {
+  border: none;
+  margin: 0 0.2em;
+}
+.pre {
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+.ribbon {
+  padding: 0.7em;
+  border-radius: 0;
+}
+.ribbon-success {
+  background: #98da79;
+  color: #366a1d;
+}
+.ribbon-error {
+  background: #fa7373;
+  color: #9b0606;
+}
+.ribbon-warn {
+  background: #fae057;
+  color: #816d04;
+}
+.dl dt {
+  font-weight: bold;
+}
+.list {
+  margin: 0.5em 0;
+}
+.plain {
+  list-style: none;
+}
