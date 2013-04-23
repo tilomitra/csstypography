@@ -2,23 +2,9 @@
 
 CSS Typography
 Simple CSS for Typography
-
-Part of YUI CSS
 Author: Tilo Mitra
 
 */
-/* smaller margins on the smaller headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0.75em 0 0;
-}
-p {
-  margin-top: 0.5em;
-}
 .splash {
   padding: 3em 1.6em;
 }
@@ -43,28 +29,50 @@ p {
 .splash-dark .splash-subhead {
   color: #888888;
 }
-/* Prettify paragraphs. Can be applied to divs too */
-.content {
+/* Parent selector that everything must fall within. */
+.csstype {
   padding: 1.6em;
   line-height: 1.4em;
+  /* Subheader Styling */
+
+  /* Blockquote Styling */
+
+  /* Adds the little dash before the cite */
+
 }
-.content-title {
-  margin-bottom: 0;
+.csstype p {
+  margin-top: 0.5em;
 }
-.content-subtitle {
-  margin-top: 0;
-  font-weight: normal;
+.csstype a {
+  text-decoration: none;
+  color: #2f81e9;
+  cursor: pointer;
+}
+.csstype a:hover {
+  color: #5d9dee;
+  text-decoration: underline;
+}
+.csstype a:visited {
+  color: #135cb8;
+}
+.csstype .muted,
+.csstype .subtitle {
   color: #999;
 }
-/* Subheader Styling */
-.content-subhead {
+.csstype .title {
+  margin-bottom: 0;
+}
+.csstype .subtitle {
+  margin-top: 0;
+  font-weight: normal;
+}
+.csstype .subhead {
   color: #999;
   text-transform: uppercase;
   border-bottom: 2px solid #eee;
   display: inline-block;
 }
-/* Blockquote Styling */
-.quote {
+.csstype blockquote {
   font-family: "Georgia", serif;
   color: #666;
   font-style: italic;
@@ -72,14 +80,13 @@ p {
   border-left: 5px solid #ddd;
   padding-left: 1.5em;
 }
-.quote cite {
+.csstype blockquote cite {
   font-size: 80%;
   display: block;
   font-family: sans-serif;
   font-style: normal;
 }
-/* Adds the little dash before the cite */
-.quote cite:before {
+.csstype .quote cite:before {
   content: '';
   display: inline-block;
   width: 1em;
@@ -88,43 +95,65 @@ p {
   vertical-align: middle;
   margin-right: 0.3em;
 }
-.code,
-.pre {
+.csstype code,
+.csstype pre {
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
   background: #f3f3f3;
   font-size: 0.8em;
   padding: 0.3em 0.5em;
 }
-.code {
+.csstype code {
   border: none;
   margin: 0 0.2em;
 }
-.pre {
+.csstype pre {
   border: 1px solid #ddd;
   border-radius: 0;
+  white-space: pre-line;
 }
-.ribbon {
+.csstype .ribbon {
   padding: 0.7em;
   border-radius: 0;
 }
-.ribbon-success {
-  background: #98da79;
-  color: #366a1d;
+.csstype .ribbon-success {
+  background: #56be8e;
+  color: #143425;
 }
-.ribbon-error {
+.csstype .ribbon-success a {
+  color: #296b4d;
+}
+.csstype .ribbon-error {
   background: #fa7373;
   color: #9b0606;
 }
-.ribbon-warn {
+.csstype .ribbon-error a {
+  color: #e50808;
+}
+.csstype .ribbon-warn {
   background: #fae057;
   color: #816d04;
 }
-.dl dt {
+.csstype .ribbon-warn a {
+  color: #cbac06;
+}
+.csstype dl dt {
   font-weight: bold;
 }
-.list {
+.csstype dl dd {
+  margin: 0 0 0 0.75em;
+}
+.csstype .list {
   margin: 0.5em 0;
 }
-.plain {
+.csstype .plain {
   list-style: none;
+}
+.csstype .text-left {
+  text-align: left;
+}
+.csstype .text-center {
+  text-align: center;
+}
+.csstype .text-right {
+  text-align: right;
 }
