@@ -59,7 +59,10 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
- 
+
+a {
+    cursor: pointer;
+}
 
 a:focus {
     outline: thin dotted;
