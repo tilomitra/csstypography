@@ -36,7 +36,7 @@ Author: Tilo Mitra
 
 /* Parent selector that everything must fall within. */
 .csstype {
-
+    
     p {
         margin-top: 0.5em;
         line-height: 1.4em;
@@ -92,12 +92,14 @@ Author: Tilo Mitra
     code, pre {
         font-family: Consolas, 'Liberation Mono', Courier, monospace;
         background: lighten(@splashColor, 2%);
-        font-size: 0.8em;
+        font-size: 0.85em;
         padding: 0.3em 0.5em;
     }
         code {
-            border: none;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 3px;
             margin: 0 0.2em;
+            white-space: nowrap;
         }
         pre {
             border: 1px solid #ddd;
@@ -105,29 +107,35 @@ Author: Tilo Mitra
             white-space: pre-line;
         }
 
+        pre code {
+            border: none;
+            white-space: pre-line;
+        }
+
     .ribbon {
         padding: 0.7em;
+        background: #eee;
         border-radius: @borderRadius;
     }
         .ribbon-success {
             background: @successColor;
-            color: darken(@successColor, 40%);
+            color: darken(@successColor, 75%);
             a {
-                color: darken(@successColor, 25%);
+                color: darken(@successColor, 50%);
             }
         }
         .ribbon-error {
             background: @errorColor;
-            color: darken(@errorColor, 40%);
+            color: darken(@errorColor, 75%);
             a {
-                color: darken(@errorColor, 25%);
+                color: darken(@errorColor, 40%);
             }
         }
         .ribbon-warn {
             background: @warnColor;
-            color: darken(@warnColor, 40%);
+            color: darken(@warnColor, 75%);
             a {
-                color: darken(@warnColor, 25%);
+                color: darken(@warnColor, 60%);
             }
         }
 

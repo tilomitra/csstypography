@@ -86,42 +86,49 @@ Author: Tilo Mitra
 .csstype pre {
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
   background: #f3f3f3;
-  font-size: 0.8em;
+  font-size: 0.85em;
   padding: 0.3em 0.5em;
 }
 .csstype code {
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
   margin: 0 0.2em;
+  white-space: nowrap;
 }
 .csstype pre {
   border: 1px solid #ddd;
   border-radius: 0;
   white-space: pre-line;
 }
+.csstype pre code {
+  border: none;
+  white-space: pre-line;
+}
 .csstype .ribbon {
   padding: 0.7em;
+  background: #eee;
   border-radius: 0;
 }
 .csstype .ribbon-success {
-  background: #56be8e;
-  color: #143425;
+  background: #daf7de;
+  color: #0f4416;
 }
 .csstype .ribbon-success a {
-  color: #296b4d;
+  color: #25ad38;
 }
 .csstype .ribbon-error {
-  background: #fa7373;
-  color: #9b0606;
+  background: #ffe7e7;
+  color: #670000;
 }
 .csstype .ribbon-error a {
-  color: #e50808;
+  color: #ff1b1b;
 }
 .csstype .ribbon-warn {
-  background: #fae057;
-  color: #816d04;
+  background: #fffbe4;
+  color: #645600;
 }
 .csstype .ribbon-warn a {
-  color: #cbac06;
+  color: #b19700;
 }
 .csstype dl dt {
   font-weight: bold;
