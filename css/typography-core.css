@@ -58,6 +58,11 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+ 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 a:focus {
     outline: thin dotted;
@@ -70,7 +75,10 @@ a:focus {
 a:active,
 a:hover {
     outline: 0;
+    text-decoration: underline;
 }
+
+
 
 
 /* ==========================================================================

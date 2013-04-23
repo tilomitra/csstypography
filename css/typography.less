@@ -36,26 +36,10 @@ Author: Tilo Mitra
 
 /* Parent selector that everything must fall within. */
 .csstype {
-    padding: 1.6em;
-    line-height: 1.4em;
 
     p {
         margin-top: 0.5em;
-    }
-
-    a {
-        text-decoration: none;
-        color: @linkColor;
-        cursor: pointer;
-
-        &:hover {
-            color: lighten(@linkColor, 10%);
-            text-decoration: underline;
-        }
-
-        &:visited {
-            color: darken(@linkColor, 15%);
-        }
+        line-height: 1.4em;
     }
 
     .muted, .subtitle {

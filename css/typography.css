@@ -31,8 +31,6 @@ Author: Tilo Mitra
 }
 /* Parent selector that everything must fall within. */
 .csstype {
-  padding: 1.6em;
-  line-height: 1.4em;
   /* Subheader Styling */
 
   /* Blockquote Styling */
@@ -42,18 +40,7 @@ Author: Tilo Mitra
 }
 .csstype p {
   margin-top: 0.5em;
-}
-.csstype a {
-  text-decoration: none;
-  color: #2f81e9;
-  cursor: pointer;
-}
-.csstype a:hover {
-  color: #5d9dee;
-  text-decoration: underline;
-}
-.csstype a:visited {
-  color: #135cb8;
+  line-height: 1.4em;
 }
 .csstype .muted,
 .csstype .subtitle {
