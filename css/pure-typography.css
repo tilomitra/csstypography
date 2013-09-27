@@ -1,65 +1,61 @@
-/* 
+/*
 
 CSS Typography
 Simple CSS for Typography
 Author: Tilo Mitra
 
 */
-.splash {
+
+.pure-splash {
   padding: 3em 1.6em;
 }
-.splash-button {
+.pure-splash-button {
   font-size: 120%;
 }
-.splash-head {
+.pure-splash-head {
   font-size: 300%;
   margin: 0.3em 0 0;
   line-height: 1.2em;
+  font-weight: bold;
 }
-.splash-subhead {
+.pure-splash-subhead {
   color: #999;
   font-weight: 300;
   line-height: 1.4em;
   margin: 0.5em 0;
 }
-.splash-dark {
+.pure-splash-dark {
   background: #222222;
   color: #ffffff;
 }
-.splash-dark .splash-subhead {
+.pure-splash-dark .pure-splash-subhead {
   color: #888888;
 }
-/* Parent selector that everything must fall within. */
-.csstype {
-  /* Subheader Styling */
 
-  /* Blockquote Styling */
-
-  /* Adds the little dash before the cite */
-
-}
-.csstype p {
+.pure-type p {
   margin-top: 0.5em;
   line-height: 1.4em;
 }
-.csstype .muted,
-.csstype .subtitle {
+.pure-type .muted {
+  opacity: 0.48;
+}
+.pure-type .subtitle {
   color: #999;
 }
-.csstype .title {
+.pure-type .title {
   margin-bottom: 0;
 }
-.csstype .subtitle {
+.pure-type .subtitle {
   margin-top: 0;
   font-weight: normal;
 }
-.csstype .subhead {
+.pure-type .subhead {
   color: #999;
   text-transform: uppercase;
   border-bottom: 2px solid #eee;
   display: inline-block;
 }
-.csstype blockquote {
+.pure-type blockquote {
   font-family: "Georgia", serif;
   color: #666;
   font-style: italic;
@@ -67,13 +63,13 @@ Author: Tilo Mitra
   border-left: 5px solid #ddd;
   padding-left: 1.5em;
 }
-.csstype blockquote cite {
+.pure-type blockquote cite {
   font-size: 80%;
   display: block;
   font-family: sans-serif;
   font-style: normal;
 }
-.csstype .quote cite:before {
+.pure-type blockquote cite:before {
   content: '';
   display: inline-block;
   width: 1em;
@@ -82,72 +78,107 @@ Author: Tilo Mitra
   vertical-align: middle;
   margin-right: 0.3em;
 }
-.csstype code,
-.csstype pre {
+.pure-type code,
+.pure-type pre {
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
   background: #f3f3f3;
   font-size: 0.85em;
   padding: 0.3em 0.5em;
+
 }
-.csstype code {
+
+.pure-type pre {
+  padding: 1em;
+}
+
+.pure-type code {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   margin: 0 0.2em;
   white-space: nowrap;
 }
-.csstype pre {
+.pure-type pre {
   border: 1px solid #ddd;
   border-radius: 0;
   white-space: pre-line;
 }
-.csstype pre code {
+.pure-type pre code {
   border: none;
   white-space: pre-line;
 }
-.csstype .ribbon {
+.pure-type .pure-ribbon {
   padding: 0.7em;
   background: #eee;
   border-radius: 0;
 }
-.csstype .ribbon-success {
+.pure-type .pure-ribbon-success {
   background: #daf7de;
   color: #0f4416;
 }
-.csstype .ribbon-success a {
+.pure-type .pure-ribbon-success a {
   color: #25ad38;
 }
-.csstype .ribbon-error {
+.pure-type .pure-ribbon-error {
   background: #ffe7e7;
   color: #670000;
 }
-.csstype .ribbon-error a {
+.pure-type .pure-ribbon-error a {
   color: #ff1b1b;
 }
-.csstype .ribbon-warn {
+.pure-type .pure-ribbon-warn {
   background: #fffbe4;
   color: #645600;
 }
-.csstype .ribbon-warn a {
+.pure-type .pure-ribbon-warn a {
   color: #b19700;
 }
-.csstype dl dt {
+.pure-type dl dt {
   font-weight: bold;
+  margin-top: 0.5em;
 }
-.csstype dl dd {
-  margin: 0 0 0 0.75em;
+.pure-type dl dd {
+  margin: 0;
+  line-height: 1.6em;
 }
-.csstype .list {
+.pure-type .list {
   margin: 0.5em 0;
+  line-height: 1.6em;
 }
-.csstype .plain {
+.pure-type .plain {
   list-style: none;
 }
-.csstype .text-left {
+.pure-type .text-left {
   text-align: left;
 }
-.csstype .text-center {
+.pure-type .text-center {
   text-align: center;
 }
-.csstype .text-right {
+.pure-type .text-right {
   text-align: right;
+}
+
+@media (max-width: 480px) {
+  .pure-splash {
+    padding: 1.5em 0.8em;
+    text-align: center;
+  }
+  .pure-splash-head {
+    font-size: 200%;
+  }
+  .pure-splash-subhead {
+    font-size: 130%;
+  }
+  .pure-splash-button {
+    font-size: 100%;
+  }
+  .pure-type dl dd {
+    margin-left: 0;
+  }
+  .pure-type dl dt {
+    margin-top: 0.5em;
+  }
+  .pure-type blockquote {
+    margin: 0.5em 0;
+    line-height: 1.6em;
+  }
 }
