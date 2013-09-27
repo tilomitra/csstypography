@@ -1,19 +1,15 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>CSSTypography</title>
+    <title>Pure Typography</title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
     <meta name="description" content="Simple styling for web typography">
-
-    <!-- Combo with CSSNormalize, CSSGrids-Responsive, CSSForm, CSSTable, CSSList (v3.9.1) -->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?3.9.1/build/cssnormalize/cssnormalize-min.css&amp;3.9.1/build/cssgrids-responsive/cssgrids-responsive-min.css&amp;3.9.1/build/cssbutton/cssbutton-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csslist/gallerycss-csslist-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-csstable/gallerycss-csstable-min.css&amp;gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css">
-
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <!-- Some custom styles to make things pretty. -->
-    <link rel="stylesheet" type="text/css" href="ui.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/typography-core.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/typography.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/typography-responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/prettypages/gh-pages/ui.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/pure-typography.css">
 
     <!-- RainbowJS Syntax Highlighting - Github Theme.
          For more themes, go to https://github.com/ccampbell/rainbow/tree/master/themes -->
@@ -22,19 +18,19 @@
     <!-- Modify header colors here to customize the look and feel of the site-->
     <style>
 
-        .header {
-            background: rgb(28, 119, 75);
-         }
-            .header h1 {
-                color: white;
-            }
-             .header h2 {
-                 font-weight:300;
-                 margin:0;
-                 color: rgb(53, 190, 124);
-             }
+        h1, h2, h3, h4, h5, h6  {
+          font-weight: bold;
+        }
 
-        .splash-custom {
+        h4 {
+          text-transform: none;
+        }
+
+        .color {
+          color: red;
+        }
+
+        .pure-splash-custom {
           color: white;
           text-align: center;
           background: url(http://farm1.staticflickr.com/49/143032778_00ccbb3659_o_d.jpg) no-repeat;
@@ -48,62 +44,51 @@
 
 </head>
 
-<body class='yui3-skin-sam'>
+<body class='pure-skin-sam'>
 
-    <div id="headerMenu" class="yui3-menu yui3-menu-open yui3-menu-horizontal yui3-menu-fixed">
-        <ul>
-            <li><a href="http://purecss.io/">Pure</a></li>
-            <li class="yui3-menu-active"><a href="http://tilomitra.github.com/csstypography/">Typography</a></li>
-            <li><a href="http://tilomitra.github.com/cssextras/">Extras</a></li>
-        </ul>
-    </div>
-    <div class="header yui3-u-1">
+    <div class="header">
 
-        <h1 class="yui3-u-1">CSSTypography</h1>
-        <h2 class="yui3-u">Simple styling for web typography</h2>
+        <h1>Pure Typography</h1>
+        <h2>CSS Styles for nicer web type. Depends on Pure.</h2>
 
     </div>
-    <div class="content csstype">
-        <h2>First, include it on your page</h2>
-        <p>CSSTypography is a YUI 3 Gallery module that makes it easy to implement common web typography styles on your web site. It's not out in the YUI Gallery yet, but you can pull it in from Github.</p>
+    <div class="content pure-type">
+        <h2>Install using <a href="http://bower.io">Bower</a></h2>
+        <p>Pure Typography can be used through <a href="http://bower.io">Bower</a>. It has a dependency on Pure, so you'll want to pull that in as well.</p>
 
         <p>It's a total of 1kb minified + gzipped.</p>
 
-<pre><code data-language="html">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/typography-core.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/typography.css">
-    <link rel="stylesheet" type="text/css" href="https://rawgithub.com/tilomitra/csstypography/master/css/typography-responsive.css">
-</code></pre>
+<pre><code data-language="html">bower install pure-typography</code></pre>
 
         <p>You can fork it from Github too.</p>
 
-        <a class="yui3-button primary-button" href="http://github.com/tilomitra/csstypography">Fork from Github</a>
+        <a class="pure-button primary-button" href="http://github.com/tilomitra/csstypography">Fork from Github</a>
 
     </div>
-        <div class="splash">
-          <h1 class="splash-head">Splash Header</h1>
-          <h2 class="splash-subhead">
-            Here's a subtitle.
+        <div class="pure-splash">
+          <h1 class="pure-splash-head">A Splash Header</h1>
+          <h2 class="pure-splash-subhead">
+            Here's a little subtitle.
           </h2>
 
-          <a class="yui3-button splash-button">Splash Button</a>
+          <a class="pure-button pure-splash-button">A Splash Button</a>
         </div>
 
 
-        <div class="splash splash-dark yui3-g-r">
-          <div class="yui3-u-1-2">
+        <div class="pure-splash pure-splash-dark pure-g-r">
+          <div class="pure-u-1-2">
             <img src="http://placehold.it/350x350">
           </div>
-          <div class="yui3-u-1-2">
-            <h1 class="splash-head">A really really really *really* long splash heading.</h1>
-            <h2 class="splash-subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</h2>
+          <div class="pure-u-1-2">
+            <h1 class="pure-splash-head">A really really really *really* long Splash heading.</h1>
+            <h2 class="pure-splash-subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</h2>
           </div>
 
         </div>
 
-        <div class="splash splash-custom yui3-g-r">
-          <div class="yui3-u-1">
-            <h1 class="splash-head">A custom splash</h1>
+        <div class="pure-splash pure-splash-custom pure-g-r">
+          <div class="pure-u-1">
+            <h1 class="pure-splash-head">A custom Splash Header</h1>
           </div>
         </div>
         <p class="text-right">
@@ -113,27 +98,32 @@
         </p>
 
 
-        <div class="content csstype">
+        <div class="content pure-type">
 
-          <h2>Getting Started</h2>
+          <h2>Getting Started: Using the <code>pure-type</code> class</h2>
           <p>
-            All styles should be used inside an element with a class name of <code>csstype</code>. This way, you can use the CSSTypography module in conjunction with other CSS on your page. Only elements within an element with the <code>csstype</code> class name will be styled with this module.
+            All styles should be used inside an element with a class name of <code>pure-type</code>. This way, you can use the Pure-Typography module with with other CSS on your page. Only elements within a parent element with the <code>pure-type</code> class name will be styled with this module.
           </p>
-
-          <h3 class="title">Titles</h3>
-          <h4 class="subtitle">...and subtitles</h4>
           <p>
             Sometimes, you want a title and a lighter subtitle, like the one above this paragraph. You can do this by adding a <code>title</code> class to a heading, and a <code>subtitle</code> class to a sub-heading. This will adjust the margins to group the title and subtitle together without much spacing between them.
           </p>
 
-          <h3 class="title">Headings</h3>
-          <h4 class="subtitle">Fairly useful.</h4>
+          <h2>Headings</h3>
+
+          You can create a grouped pair of a title and subtitle by using the <code>title</code> and <code>subtitle</code> classes respectively. See the example below:
+
+          <h3 class="title">Here's an example title.</h2>
+          <h4 class="subtitle">It has a corresponding subtitle. This is pretty useful.</h4>
+
+          <p>Here are the standard headings:</p>
           <h1>Here's an H1</h1>
           <h2>Here's an H2</h2>
           <h3>Here's an H3</h3>
           <h4>Here's an H4</h4>
           <h5>Here's an H5</h5>
           <h6>Here's an H6</h6>
+
+          <p>You can add the <code>subhead</code> class to a header element to achieve this effect:</p>
           <h4 class="subhead">Content Subhead Heading</h4>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -145,6 +135,7 @@
           </p>
 
           <h3>Blockquotes and Cites</h3>
+
           <blockquote>
             Typography is the craft of endowing human language with a durable visual form.
             <cite title="citation">Anonymous</cite>
@@ -153,13 +144,13 @@
 
           <h3>Code</h3>
           <p>
-            You can pull down CSSForm from the YUI Gallery. Just include this <code>&lt;link&gt;</code> element in your <code>&lt;head&gt;</code>.
+            <code>&lt;code&gt;</code> elements are styled like this.
           </p>
 
           <h3>Pre</h3>
 
           <pre>
-        link rel="stylesheet" href="http://yui.yahooapis.com/gallery-2013.03.27-22-06/build/gallerycss-cssform/gallerycss-cssform-min.css"
+        &lt;link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css"&gt;
           </pre>
 
           <h3>Small</h3>
@@ -184,25 +175,37 @@
 
           <h3>Muted Colors</h3>
           <p>
-            Add the <code>muted</code> class name to an element <span class="muted">to add a muted color to the text within.</span>
+            Add the <code>muted</code> class name to an element <span class="muted">to add a muted color to the text within. See how this text has less contrast?</span>
           </p>
 
-          <div class="yui3-g">
-            <div class="yui3-u-1">
+          <p class="color">You can even have the muted effect on <span class="muted">colored text</span>.
 
-              <p class="ribbon ribbon-success">
-                You can pull down CSSForm from the YUI Gallery. Just include this <code>&lt;link&gt;</code> element in your <code>&lt;head&gt;</code>. Here's a <a>link</a>
+          <h3>Ribbons</h3>
+          <p>
+            Add the <code>pure-ribbon</code> class name to an element to add a ribbon effect. Ribbons come in various styles.</span>
+          </p>
+
+
+          <div class="pure-g">
+            <div class="pure-u-1">
+
+              <p class="pure-ribbon">
+                This is a default ribbon. Just add the <code>pure-ribbon</code> classname.
+              </p>
+
+              <p class="pure-ribbon pure-ribbon-success">
+                This is a success ribbon. Add the <code>pure-ribbon pure-ribbon-success</code> classes.
               </p>
             </div>
-            <div class="yui3-u-1">
-              <p class="ribbon ribbon-error">
-                You can pull down CSSForm from the YUI Gallery. Just include this <code>&lt;link&gt;</code> element in your <code>&lt;head&gt;</code>. Here's a <a>link</a>
+            <div class="pure-u-1">
+              <p class="pure-ribbon pure-ribbon-error">
+                To show an error, use this ribbon. Add the <code>pure-ribbon pure-ribbon-error</code> classes.
               </p>
             </div>
 
-            <div class="yui3-u-1">
-              <p class="ribbon ribbon-warn">
-                You can pull down CSSForm from the YUI Gallery. Just include this <code>&lt;link&gt;</code> element in your <code>&lt;head&gt;</code>. Here's a <a>link</a>
+            <div class="pure-u-1">
+              <p class="pure-ribbon pure-ribbon-warn">
+                To show an warning, use this warning ribbon. Add the <code>pure-ribbon pure-ribbon-warn</code> classes.
               </p>
             </div>
           </div>
@@ -224,12 +227,12 @@
         <h3 class="title">List Elements</h3>
         <h4 class="subtitle">Add a <code>list</code> class to style ordered and unordered lists. Add the <code>plain</code> class to remove the default browser styles.</h4>
 
-        <div class="yui3-g-r">
-          <div class="yui3-u-1-2">
+        <div class="pure-g-r">
+          <div class="pure-u-1-2">
 
-            <h4><code>ul</code> Default Styling</h4>
+            <h4 class="title"><code>ul</code> Default Styling</h4>
 
-            <p class="muted">Add the <code>list</code> classes to an unordered list element to apply these styles.</p>
+            <p>Add the <code>list</code> classes to an unordered list element to apply these styles.</p>
 
             <ul class="list">
               <li>Lorem ipsum dolor sit amet</li>
@@ -249,11 +252,11 @@
               <li>Eget porttitor lorem</li>
             </ul>
           </div>
-          <div class="yui3-u-1-2">
+          <div class="pure-u-1-2">
 
             <h4><code>ul</code> Plain Styling</h4>
 
-            <p class="muted">Add the <code>list</code> classes to an unordered list element to apply these styles.</p>
+            <p>Add the <code>list</code> classes to an unordered list element to apply these styles.</p>
 
             <ul class="list plain">
               <li>Lorem ipsum dolor sit amet</li>
@@ -275,11 +278,11 @@
           </div>
 
 
-          <div class="yui3-u-1-2">
+          <div class="pure-u-1-2">
 
             <h4><code>ol</code> Default Styling</h4>
 
-            <p class="muted">Add the <code>list</code> classes to an ordered list element to apply these styles.</p>
+            <p>Add the <code>list</code> classes to an ordered list element to apply these styles.</p>
 
             <ol class="list">
               <li>Lorem ipsum dolor sit amet</li>
@@ -299,11 +302,11 @@
               <li>Eget porttitor lorem</li>
             </ul>
           </div>
-          <div class="yui3-u-1-2">
+          <div class="pure-u-1-2">
 
             <h4><code>ol</code> Plain Styling</h4>
 
-            <p class="muted">Add the <code>list plain</code> classes to an ordered list element to apply these styles.</p>
+            <p>Add the <code>list plain</code> classes to an ordered list element to apply these styles.</p>
 
             <ol class="list plain">
               <li>Lorem ipsum dolor sit amet</li>
