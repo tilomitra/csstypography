@@ -3,7 +3,7 @@
     "builds": {
         "gallerycss-csstypography": {
             "cssfiles": [
-                "css/pure-typography.css
+                "css/pure-typography.css"
             ]
         }
     }
